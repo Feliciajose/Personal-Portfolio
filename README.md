@@ -1,4 +1,4 @@
-# 🚀 Felicia R P - Portfolio
+# Felicia R P - Portfolio
 
 Hi! I’m **Felicia R P**, a passionate **Full Stack Developer** with skills in **UI/UX Design**, **Front-End Development**, and **MERN Stack**.  
 
@@ -25,8 +25,8 @@ Check out my projects and experience in the portfolio:
 ## 📫 Contact
 
 - ✉️ Email: feliciajose200407@gmail.com  
-- 💼 LinkedIn: [linkedin.com/in/felicia-rp](https://www.linkedin.com/in/felicia-rp)  
-- 💻 GitHub: [github.com/felicia-rp](https://github.com/felicia-rp)  
+- 💼 LinkedIn: [linkedin.com/in/felicia-rp](https://www.linkedin.com/in/felicia-jose-ab5679255/)  
+- 💻 GitHub: [github.com/felicia-rp](https://github.com/Feliciajose)  
 
 ---
 
