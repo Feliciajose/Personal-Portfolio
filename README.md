@@ -25,8 +25,8 @@ Check out my projects and experience in the portfolio:
 ## 📫 Contact
 
 - ✉️ Email: feliciajose200407@gmail.com  
-- 💼 LinkedIn: [linkedin.com/in/felicia-rp](https://www.linkedin.com/in/felicia-jose-ab5679255/)  
-- 💻 GitHub: [github.com/felicia-rp](https://github.com/Feliciajose)  
+- 💼 LinkedIn: [linkedin.com](https://www.linkedin.com/in/felicia-jose-ab5679255/)  
+- 💻 GitHub: [github.com](https://github.com/Feliciajose)  
 
 ---
 
