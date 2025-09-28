@@ -1,0 +1,13 @@
+/* Mario Portfolio - All styles are handled by the design system in index.css */
+
+/* Pixel-perfect image rendering for retro aesthetic */
+img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Smooth scrolling for navigation */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Vibrant Color Palette Design System - All colors in HSL format */
+
+@layer base {
+  :root {
+    /* Vibrant Color Palette - Coolors */
+    --vibrant-red: 358 92% 61%;        /* #F94144 */
+    --vibrant-red-foreground: 0 0% 98%;
+    --vibrant-red-dark: 358 92% 56%;
+    
+    --vibrant-orange: 16 91% 56%;      /* #F3722C */
+    --vibrant-orange-foreground: 0 0% 98%;
+    --vibrant-orange-dark: 16 91% 51%;
+    
+    --vibrant-yellow: 33 95% 54%;      /* #F8961E */
+    --vibrant-yellow-foreground: 33 95% 15%;
+    --vibrant-yellow-dark: 33 95% 49%;
+    
+    --vibrant-gold: 44 94% 64%;        /* #F9C74F */
+    --vibrant-gold-foreground: 44 94% 15%;
+    --vibrant-gold-dark: 44 94% 59%;
+    
+    --vibrant-green: 94 42% 58%;       /* #90BE6D */
+    --vibrant-green-foreground: 0 0% 98%;
+    --vibrant-green-dark: 94 42% 53%;
+    
+    --vibrant-teal: 167 40% 46%;       /* #43AA8B */
+    --vibrant-teal-foreground: 0 0% 98%;
+    --vibrant-teal-dark: 167 40% 41%;
+    
+    --vibrant-blue-teal: 178 32% 53%;  /* #4D908E */
+    --vibrant-blue-teal-foreground: 0 0% 98%;
+    --vibrant-blue-teal-dark: 178 32% 48%;
+    
+    --vibrant-blue-gray: 212 24% 48%;  /* #577590 */
+    --vibrant-blue-gray-foreground: 0 0% 98%;
+    --vibrant-blue-gray-dark: 212 24% 43%;
+    
+    --vibrant-blue: 202 64% 39%;       /* #277DA1 */
+    --vibrant-blue-foreground: 0 0% 98%;
+    --vibrant-blue-dark: 202 64% 34%;
+    
+    /* Mario Theme Mapping with New Colors */
+    --mario-red: var(--vibrant-red);
+    --mario-red-foreground: var(--vibrant-red-foreground);
+    --mario-red-dark: var(--vibrant-red-dark);
+    
+    --mario-blue: var(--vibrant-blue);
+    --mario-blue-foreground: var(--vibrant-blue-foreground);
+    --mario-blue-dark: var(--vibrant-blue-dark);
+    
+    --mario-green: var(--vibrant-green);
+    --mario-green-foreground: var(--vibrant-green-foreground);
+    --mario-green-dark: var(--vibrant-green-dark);
+    
+    --mario-gold: var(--vibrant-gold);
+    --mario-gold-foreground: var(--vibrant-gold-foreground);
+    --mario-gold-dark: var(--vibrant-gold-dark);
+    
+    --mario-block: 240 10% 3.9%;
+    --mario-block-foreground: 0 0% 98%;
+    --mario-block-dark: 240 5.9% 10%;
+    
+    /* Gaming Background */
+    --background: 195 100% 85%; /* Sky blue background */
+    --foreground: 0 0% 15%; /* Dark text */
+
+    /* Vibrant Gradients */
+    --gradient-mario-power: linear-gradient(135deg, hsl(var(--vibrant-red)), hsl(var(--vibrant-gold)));
+    --gradient-mario-pipe: linear-gradient(180deg, hsl(var(--vibrant-green)), hsl(var(--vibrant-teal)));
+    --gradient-mario-sky: linear-gradient(180deg, hsl(var(--vibrant-blue)) 0%, hsl(var(--vibrant-teal)) 100%);
+    --gradient-vibrant: linear-gradient(135deg, hsl(var(--vibrant-orange)), hsl(var(--vibrant-yellow)), hsl(var(--vibrant-green)));
+    
+    /* Enhanced Shadows */
+    --shadow-mario-block: 0 8px 16px -4px hsl(var(--vibrant-blue-gray) / 0.4);
+    --shadow-mario-glow: 0 0 20px hsl(var(--vibrant-gold) / 0.6);
+    --shadow-vibrant: 0 10px 25px -5px hsl(var(--vibrant-red) / 0.3);
+    
+    /* Base Theme Variables */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: var(--vibrant-red);
+    --primary-foreground: var(--vibrant-red-foreground);
+    --secondary: var(--vibrant-blue-gray);
+    --secondary-foreground: var(--vibrant-blue-gray-foreground);
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: var(--vibrant-teal);
+    --accent-foreground: var(--vibrant-teal-foreground);
+    --destructive: var(--vibrant-red);
+    --destructive-foreground: var(--vibrant-red-foreground);
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: var(--vibrant-blue);
+    --radius: 0.5rem;
+    --chart-1: var(--vibrant-red);
+    --chart-2: var(--vibrant-green);
+    --chart-3: var(--vibrant-blue);
+    --chart-4: var(--vibrant-gold);
+    --chart-5: var(--vibrant-orange);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-mario-sky);
+    font-family: 'VT323', monospace;
+    min-height: 100vh;
+    letter-spacing: 0.025em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .mario-block {
+    background: var(--gradient-mario-power);
+    box-shadow: var(--shadow-mario-block);
+    border: 2px solid hsl(var(--mario-block-dark));
+  }
+
+  .mario-coin {
+    background: var(--gradient-vibrant);
+    box-shadow: var(--shadow-mario-glow);
+    animation: coin-spin 2s linear infinite;
+  }
+
+  .mario-pipe {
+    background: var(--gradient-mario-pipe);
+    border: 2px solid hsl(var(--mario-green-dark));
+  }
+
+  .mario-bounce {
+    animation: mario-bounce 1s ease-in-out infinite;
+  }
+
+  .power-up-glow {
+    box-shadow: var(--shadow-mario-glow);
+    animation: power-up-pulse 2s ease-in-out infinite;
+  }
+
+  .vibrant-pulse {
+    animation: vibrant-pulse 2s infinite;
+  }
+}
+
+@layer utilities {
+  .font-pixel, .font-body {
+    font-family: 'VT323', monospace;
+    letter-spacing: 0.025em;
+  }
+
+  .font-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@keyframes mario-bounce {
+  0%, 100% { 
+    transform: translateY(0px);
+  }
+  50% { 
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes coin-spin {
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(90deg) scale(0.8); }
+  100% { transform: rotateY(180deg); }
+}
+
+@keyframes power-up-pulse {
+  0%, 100% { 
+    box-shadow: var(--shadow-mario-glow);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 25px hsl(var(--vibrant-gold) / 0.9);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes vibrant-pulse {
+  0%, 100% { 
+    box-shadow: 0 0 0 0 hsl(var(--vibrant-red) / 0.7);
+  }
+  70% { 
+    box-shadow: 0 0 0 10px hsl(var(--vibrant-red) / 0);
+  }
+}
